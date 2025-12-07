@@ -5,7 +5,7 @@ function pingRetronetWeb() {
     } else {
         xhr = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xhr.open('GET', '//www.retronet.win/', true);
+    xhr.open('GET', '//www.retronet.win/example.json', true);
     xhr.send();
 }
 
@@ -16,7 +16,7 @@ function pingRetronetChat() {
     } else {
         xhr = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xhr.open('GET', '//chat.retronet.win/', true);
+    xhr.open('GET', '//chat.retronet.win/example.json', true);
     xhr.send();
 }
 
