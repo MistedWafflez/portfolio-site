@@ -1,3 +1,6 @@
+
+//MistedWafflez@RetroNet/SpaceHey/GitHub (2025)
+
 function ping(url,onSuccess,onFailure) {
     var xhr;
     if (window.XMLHttpRequest) {
