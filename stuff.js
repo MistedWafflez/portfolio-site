@@ -32,7 +32,7 @@ function assignText(element, value) {
   }
 };
 
-ping('//www.retronet.win/example.json',
+ping('//web.retronet.win/example.json',
     function success(data) {
         assignText(RetronetWebStatus,'Online');
     },
