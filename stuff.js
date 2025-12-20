@@ -38,7 +38,7 @@ function assignText(element, value) {
     }
 };
 
-ping('http://web.retronet.win/status.txt',
+ping('//web.retronet.win/status.txt',
     function success(data) {
         assignText(RetronetWebStatus, data || 'Online');
     },
@@ -48,7 +48,7 @@ ping('http://web.retronet.win/status.txt',
     }
 );
 
-ping('http://chat.retronet.win/status.txt',
+ping('//chat.retronet.win/status.txt',
     function success(data) {
         assignText(RetronetChatStatus, data || 'Online');
     },
