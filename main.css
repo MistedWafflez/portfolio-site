@@ -203,7 +203,7 @@ a img {
   float: right;
 }
 
-.clickable:active {
+.button:active {
   transform: scale(0.96);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3) inset;
 }
