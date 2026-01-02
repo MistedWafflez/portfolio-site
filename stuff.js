@@ -56,9 +56,6 @@ function assignText(element, value) {
 ping(protocol + '//web.retronet.win/status.txt',
     function success(data) {
         assignText(RetronetWebStatus, data || 'Online');
-        if (RetronetWebButton.className.indexOf('clickable') === -1) {
-            RetronetWebButton.className += ' clickable';
-        }
     },
     function failure(status) {
         assignText(RetronetWebStatus, 'Offline');
@@ -69,9 +66,6 @@ ping(protocol + '//web.retronet.win/status.txt',
 ping(protocol + '//chat.retronet.win/status.txt',
     function success(data) {
         assignText(RetronetChatStatus, data || 'Online');
-        if (RetronetChatButton.className.indexOf('clickable') === -1) {
-            RetronetChatButton.className += ' clickable';
-        }
     },
     function failure(status) {
         assignText(RetronetChatStatus, 'Offline');
@@ -85,9 +79,6 @@ var RetronetLunaroStatus = document.getElementById('RetronetLunaro-StatusText');
 ping(protocol + '//lunaro.retronet.win/status.txt',
     function success(data) {
         assignText(RetronetLunaroStatus, data || 'Online');
-        if (RetronetLunaroButton.className.indexOf('clickable') === -1) {
-            RetronetLunaroButton.className += ' clickable';
-        }
     },
     function failure(status) {
         assignText(RetronetLunaroStatus, 'Offline');
