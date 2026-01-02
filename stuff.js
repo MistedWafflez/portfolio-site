@@ -1,5 +1,5 @@
 
-    // MistedWafflez@RetroNet/SpaceHey/GitHub (2025)
+    // MistedWafflez@RetroNet/SpaceHey/GitHub (2025-2026)
 
 var protocol = "";
 
