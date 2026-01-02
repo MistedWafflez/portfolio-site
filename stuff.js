@@ -78,10 +78,10 @@ var RetronetLunaroStatus = document.getElementById('RetronetLunaro-StatusText');
 
 ping(protocol + '//lunaro.retronet.win/status.txt',
     function success(data) {
-        assignText(RetronetChatStatus, data || 'Online');
+        assignText(RetronetLunaroStatus, data || 'Online');
     },
     function failure(status) {
-        assignText(RetronetChatStatus, 'Offline');
-        RetronetChatButton.href = "javascript:void(0)";
+        assignText(RetronetLunaroStatus, 'Offline');
+        RetronetLunaroButton.href = "javascript:void(0)";
     }
 );
