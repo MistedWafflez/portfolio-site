@@ -1,5 +1,5 @@
 body {
-  background-image: url('/background.jpg');
+  background-image: url('/background-colorful.jpg');
   background-repeat: no-repeat;
   background-color: #000;
   color: #fff;
@@ -10,6 +10,27 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(143, 95, 232, 0.2), transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 60%, rgba(0, 0, 0, 0.4));
+    pointer-events: none;
+    z-index: -1;
 }
 
 a img {
