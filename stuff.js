@@ -72,3 +72,16 @@ ping(protocol + '//chat.retronet.win/status.txt',
         RetronetChatButton.href = "javascript:void(0)";
     }
 );
+
+var RetronetLunaroButton = document.getElementById('Button-RetroNetLunaro');
+var RetronetLunaroStatus = document.getElementById('RetronetLunaro-StatusText');
+
+ping(protocol + '//lunaro.retronet.win/status.txt',
+    function success(data) {
+        assignText(RetronetChatStatus, data || 'Online');
+    },
+    function failure(status) {
+        assignText(RetronetChatStatus, 'Offline');
+        RetronetChatButton.href = "javascript:void(0)";
+    }
+);
