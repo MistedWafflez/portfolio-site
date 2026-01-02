@@ -1,0 +1,183 @@
+body {
+  background-image: url('/background.jpg');
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+a img {
+  border: none;
+}
+
+.card {
+  width: 480px;
+  margin: 24px auto;
+  background: #11181c;
+  border: 1px solid #101d24;
+  overflow: hidden;
+  text-align: left;
+  max-width: calc(100% - 4px);
+  background: rgba(17, 24, 28, 0.85);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(255, 100, 255, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 22px rgba(255, 100, 255, 0.25);
+}
+
+.profile {
+  overflow: hidden;
+  padding-bottom: 4px;
+}
+
+.pfp {
+  float: left;
+  width: 68px;
+  height: 68px;
+  margin: 16px;
+  aspect-ratio: 1/1;
+}
+
+.pfp img {
+  width: 68px;
+  height: 68px;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+.links {
+  float: left;
+  margin: 16px;
+  width: 300px;
+  overflow: hidden;
+  width: calc(100% - 132px);
+}
+
+.links a {
+  float: right;
+  width: 52px;
+  height: 52px;
+  margin: 8px;
+  background: #333;
+  border: 1px solid #222;
+  display: block;
+  background: linear-gradient(to bottom right, #2e2e2e, #444);
+  border-radius: 6px;
+  aspect-ratio: 1/1;
+  box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.links a:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
+}
+
+.links img {
+  width: 45px;
+  height: 45px;
+  margin: 4px;
+  display: block;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.2));
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #222;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.section {
+  margin: 20px;
+}
+
+.section p {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.section div {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 4px 0;
+  color: #eee;
+}
+
+.section .title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.button {
+  display: block;
+  height: 40px;
+  margin: 6px 2px;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid #000;
+  background: #333;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+#Button-RetroNetWeb {
+  background: #1f748e;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f748e', endColorstr='#6d9adf', GradientType=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f748e', endColorstr='#6d9adf', GradientType=1)";
+  background: -moz-linear-gradient(left, #1f748e, #6d9adf);
+  background: -webkit-gradient(linear, left top, right top, from(#1f748e), to(#6d9adf));
+  background: linear-gradient(to right, #1f748e, #6d9adf);
+}
+
+#Button-RetroNetChat {
+  background: #2c7d44;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c7d44', endColorstr='#5cb974', GradientType=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c7d44', endColorstr='#5cb974', GradientType=1)";
+  background: -moz-linear-gradient(left, #2c7d44, #5cb974);
+  background: -webkit-gradient(linear, left top, right top, from(#2c7d44), to(#5cb974));
+  background: linear-gradient(to right, #2c7d44, #5cb974);
+}
+
+#Button-RetroNetLunaro {
+  background: #e056c5;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e056c5', endColorstr='#4b5bff', GradientType=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#e056c5', endColorstr='#4b5bff', GradientType=1)";
+  background: -moz-linear-gradient(left, #e056c5, #4b5bff);
+  background: -webkit-gradient(linear, left top, right top, from(#e056c5), to(#4b5bff));
+  background: linear-gradient(to right, #e056c5, #4b5bff);
+}
+
+.button div {
+  float: left;
+  margin: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.button .status {
+  float: right;
+}
