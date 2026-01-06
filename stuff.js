@@ -107,7 +107,7 @@ function fetchUserProfile(userId) {
 };
 
 function doGreeting() {
-    fetchJSON(protocol + '//web.retronet.win/api/integration/getSelf',
+    fetchJSON(protocol + '//retronet.win/api/integration/getSelf',
         function success(selfData) {
             if (!selfData || !selfData.loggedIn) {
                 hideGreeting();
