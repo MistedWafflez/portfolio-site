@@ -90,7 +90,7 @@ ping(protocol + '//lunaro.retronet.win/status.txt',
 );
 
 function fetchUserProfile(userId) {
-    fetchJSON(protocol + '//web.retronet.win/api/integration/getProfile?userId=' + encodeURIComponent(userId),
+    fetchJSON(protocol + '//retronet.win/api/integration/getProfile?userId=' + encodeURIComponent(userId),
         function success(profileData) {
             if (!profileData || !profileData.profile) return;
             var displayName = profileData.profile.displayName || "traveler";
@@ -127,7 +127,7 @@ function hideGreeting() {
     if (greet) greet.classList.remove("shown");
 }
 
-ping(protocol + '//web.retronet.win/status.txt',
+ping(protocol + '//retronet.win/status.txt',
     function success(data) {
         assignText(RetronetWebStatus, data || 'Online');
         doGreeting();
