@@ -16,15 +16,18 @@ input {
     outline: none;
 }
 
-
 body {
-    background-image: url("/images/midnightBlue.jpg");
+    background-image: url('/background-colorful.jpg');
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: #b5c5ca;
-    color: #000;
     font-family: Inter, Arial;
     font-weight: 400;
     letter-spacing: 0.2px;
@@ -234,14 +237,17 @@ body {
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.92);
     }
+
     30% {
         opacity: 0.45;
         transform: translate(-50%, -50%) scale(0.97);
     }
+
     70% {
         opacity: 0.85;
         transform: translate(-50%, -50%) scale(1.015);
     }
+
     100% {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
