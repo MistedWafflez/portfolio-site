@@ -59,8 +59,6 @@ function fetchJSON(url, onSuccess, onFailure) {
 
 var RetronetWebButton = document.getElementById('Button-RetroNetWeb');
 var RetronetWebStatus = document.getElementById('RetronetWeb-StatusText');
-var RetronetChatButton = document.getElementById('Button-RetroNetChat');
-var RetronetChatStatus = document.getElementById('RetronetM-StatusText');
 
 function assignText(element, value) {
     if (!element) return;
@@ -72,9 +70,6 @@ function assignText(element, value) {
         element.innerHTML = value;
     }
 }
-
-assignText(RetronetChatStatus, 'Defunct');
-RetronetChatButton.href = "javascript:void(0)";
 
 var RetronetLunaroButton = document.getElementById('Button-RetroNetLunaro');
 var RetronetLunaroStatus = document.getElementById('RetronetLunaro-StatusText');
