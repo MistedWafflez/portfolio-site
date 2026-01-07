@@ -109,12 +109,8 @@ function fetchUserProfile(userId) {
 function doGreeting() {
     fetchJSON(protocol + '//retronet.win/api/integration/getSelf',
         function success(selfData) {
-            if (!selfData) {
-                if (!selfData.loggedIn) {
-                    hideGreeting();
-                } else {
-                    greet.innerHTML('<a href="/login">Login with RetroNet</a>');
-                }
+            if (!selfData || !selfData.loggedIn) {
+                hideGreeting();
                 return;
             }
             fetchUserProfile(selfData.userId);
