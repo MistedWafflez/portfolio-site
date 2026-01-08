@@ -1,0 +1,25 @@
+.card {
+  max-width: calc(100% - 48px);
+}
+
+
+.links {
+  width: calc(100% - 32px);
+}
+
+.links a {
+  float: left;
+}
+
+.pfp {
+  height: 100px; 
+  width: calc(100% - 32px);
+  margin-bottom: 0;
+}
+
+.pfp img {
+  margin: auto;
+  display: block;
+  height: 100px;
+  width: 100px;
+}
