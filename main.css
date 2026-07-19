@@ -207,6 +207,15 @@ a img {
   background: linear-gradient(to right, #e056c5, #4b5bff);
 }
 
+#Button-MochaChat {
+  background: #ba8c63;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c99d75', endColorstr='#ba8c63', GradientType=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#c99d75', endColorstr='#ba8c63', GradientType=1)";
+  background: -moz-linear-gradient(left, #c99d75, #ba8c63);
+  background: -webkit-gradient(linear, left top, right top, from(#c99d75), to(#ba8c63));
+  background: linear-gradient(to right, #c99d75, #ba8c63);
+}
+
 .button div {
   float: left;
   margin: 10px;
