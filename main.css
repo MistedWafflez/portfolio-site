@@ -248,3 +248,7 @@ a img {
 .projects-greeting.shown {
   opacity: 1;
 }
+
+.noDisplay {
+  display: none;
+}
