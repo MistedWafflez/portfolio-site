@@ -73,7 +73,7 @@ function assignText(element, value) {
 
 var RetronetLunaroButton = document.getElementById('Button-RetroNetLunaro');
 var RetronetLunaroStatus = document.getElementById('RetronetLunaro-StatusText');
-
+/*
 ping(protocol + '//lunaro.retronet.win/status.txt',
     function success(data) {
         assignText(RetronetLunaroStatus, data || 'Online');
@@ -83,7 +83,7 @@ ping(protocol + '//lunaro.retronet.win/status.txt',
         RetronetLunaroButton.href = "javascript:void(0)";
     }
 );
-
+*/
 function fetchUserProfile(userId) {
     fetchJSON(protocol + '//retronet.win/api/integration/getProfile?userId=' + encodeURIComponent(userId),
         function success(profileData) {
