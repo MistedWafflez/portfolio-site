@@ -1,0 +1,23 @@
+.links a {
+	float: none;
+	display: inline-block;
+}
+
+.pfp img {
+	width: 100px;
+	height: 100px;
+}
+
+.pfp {
+	height: 100px;
+	float: none;
+	width: 451px;
+	text-align: center;
+}
+
+.links {
+	float: none;
+	width: 451px;
+	text-align: center;
+  margin-bottom: 10px;
+}
