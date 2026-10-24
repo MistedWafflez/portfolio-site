@@ -132,3 +132,60 @@ ping(protocol + '//retronet.win/status.txt',
         RetronetWebButton.href = "javascript:void(0)";
     }
 );
+
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + escape(value) + expires + "; path=/";
+}
+
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1, c.length);
+        }
+        if (c.indexOf(nameEQ) === 0) {
+            return unescape(c.substring(nameEQ.length, c.length));
+        }
+    }
+    return null;
+}
+
+var button_language = document.getElementById("bouton-langue");
+
+var text_aboutme = document.getElementById("about-section");
+var text_mybio = document.getElementById("whatido-text");
+var text_myprojects = document.getElementById("projects-span");
+var text_humanlanguages = document.getElementById("hl-section");
+var text_hl_eng = document.getElementById("hl-section-eng");
+var text_hl_frc = document.getElementById("hl-section-frc");
+var text_programminglanguages = document.getElementById("pl-section");
+
+var siteLanguage = getCookie("language") || "eng";
+
+if (siteLanguage === "eng") {
+    button_language.onclick = function () {
+        setCookie("language", "frc", 315569260);
+        document.location.href = document.location.href;
+    };
+} else if (siteLanguage === "frc") {
+    button_language.onclick = function () {
+        setCookie("language", "eng", 315569260);
+        document.location.href = document.location.href;
+    };
+    button_language.innerHTML = "English";
+    text_aboutme.innerHTML = "À propos de moi :";
+    text_mybio.innerHTML = "J'fais des jeux, des sites web, et des choses Roblox mdr.";
+    text_myprojects.innerHTML = "Mes projets:";
+    text_humanlanguages.innerHTML = "Langues humaines";
+    text_hl_eng.innerHTML = "Anglais";
+    text_hl_frc.innerHTML = "Français (Niveau intermédiaire)";
+    text_programminglanguages.innerHTML = "Langages de programmation";
+}
